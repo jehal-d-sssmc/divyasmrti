@@ -576,17 +576,16 @@ $(function () {
 
 /* ===============================  Wow Animation  =============================== */
 
-wow = new WOW({
-  animateClass: 'animated',
-  offset: 100,
-});
-wow.init();
 
 // === window When Loading === //
 
 $(window).on('load', function () {
   /* ===============================  SPLITTING TEXT  =============================== */
-
+  wow = new WOW({
+    animateClass: 'animated',
+    offset: 100,
+  });
+  wow.init();
   //Splitting();
 
   /* ===============================  thumparallax  =============================== */

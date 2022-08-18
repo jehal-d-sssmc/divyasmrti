@@ -1,27 +1,40 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
 import Head from 'next/head';
 
+
 export default class Home extends React.Component {
+
+  constructor(props){
+    super(props);
+  }
+
   componentDidMount() {
     let sloader = document.getElementById('loadScripts');
+    sloader.innerHTML = '';
     let ele = [];
     let scripts = [
-      'assets/js/jquery-migrate-3.0.0.min.js',
-      'assets/js/plugins.js',
-      'assets/js/scripts.js',
+      {src: "assets/js/jquery-3.0.0.min.js"},
+      {src: "assets/js/jquery-migrate-3.0.0.min.js", async: 'true'},
+      {src: "assets/js/plugins.js", async: 'true'},
+      {src: "assets/js/scripts.js", async: 'true'}
     ];
 
     scripts.forEach((x) => {
       let el = document.createElement('script');
-      el.setAttribute('src', x);
+      Object.entries(x).forEach((ob)=>{
+        el.setAttribute(ob[0],ob[1]);
+      });
       ele.push(el);
-      // sloader.appendChild(el);
+      sloader.appendChild(el);
     });
 
     console.log(ele);
   }
 
   render() {
+    
+
     return (
       <div>
         <Head>
@@ -61,11 +74,6 @@ export default class Home extends React.Component {
           <link rel="stylesheet" href="assets/css/plugins.css" />
 
           <link rel="stylesheet" href="assets/css/style.css" />
-
-          <script src="assets/js/jquery-3.0.0.min.js"></script>
-          <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
-          <script src="assets/js/plugins.js"></script>
-          <script src="assets/js/scripts.js"></script>
           
         </Head>
 
@@ -226,7 +234,7 @@ export default class Home extends React.Component {
                         </div>
                         <div className="item">
                             <h6>Address :</h6>
-                            <p>'Brindavan', Kadugodi Post, Kadugodi, Bengaluru, Karnataka 560067</p>
+                            <p>&apos;Brindavan&apos;, Kadugodi Post, Kadugodi, Bengaluru, Karnataka 560067</p>
                         </div>
                         <div className="item">
                             <h6>Email :</h6>
