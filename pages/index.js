@@ -133,24 +133,24 @@ export default class Home extends React.Component {
                     </li>
                     <li>
                       <div className="o-hidden">
-                        <span className="link dmenu">About <i class="fa fa-angle-right"></i></span>
+                        <span className="link dmenu">About <i className="fa fa-angle-right"></i></span>
                       </div>
-                      <div class="sub-menu">
+                      <div className="sub-menu">
                           <ul>
                               <li>
-                                  <div class="o-hidden">
-                                      <span class="sub-link back"><i class="fa fa-angle-left"></i> Go
+                                  <div className="o-hidden">
+                                      <span className="sub-link back"><i className="fa fa-angle-left"></i> Go
                                           Back</span>
                                   </div>
                               </li>
                               <li>
-                                  <div class="o-hidden">
-                                      <a href="#" class="sub-link">Sri Sathya Sai</a>
+                                  <div className="o-hidden">
+                                      <a href="#" className="sub-link">Sri Sathya Sai</a>
                                   </div>
                               </li>
                               <li>
-                                  <div class="o-hidden">
-                                      <a href="#" class="sub-link">Digital Museum</a>
+                                  <div className="o-hidden">
+                                      <a href="#" className="sub-link">Digital Museum</a>
                                   </div>
                               </li>
                           </ul>
@@ -158,29 +158,29 @@ export default class Home extends React.Component {
                     </li>
                     <li>
                       <div className="o-hidden">
-                        <span className="link dmenu">Visit <i class="fa fa-angle-right"></i></span>
+                        <span className="link dmenu">Visit <i className="fa fa-angle-right"></i></span>
                       </div>
-                      <div class="sub-menu">
+                      <div className="sub-menu">
                           <ul>
                               <li>
-                                  <div class="o-hidden">
-                                      <span class="sub-link back"><i class="fa fa-angle-left"></i> Go
+                                  <div className="o-hidden">
+                                      <span className="sub-link back"><i className="fa fa-angle-left"></i> Go
                                           Back</span>
                                   </div>
                               </li>
                               <li>
-                                  <div class="o-hidden">
-                                      <a href="#" class="sub-link">Getting Here</a>
+                                  <div className="o-hidden">
+                                      <a href="#" className="sub-link">Getting Here</a>
                                   </div>
                               </li>
                               <li>
-                                  <div class="o-hidden">
-                                      <a href="#" class="sub-link">General Info</a>
+                                  <div className="o-hidden">
+                                      <a href="#" className="sub-link">General Info</a>
                                   </div>
                               </li>
                               <li>
-                                  <div class="o-hidden">
-                                      <a href="#" class="sub-link">Online Booking</a>
+                                  <div className="o-hidden">
+                                      <a href="#" className="sub-link">Online Booking</a>
                                   </div>
                               </li>
                           </ul>
@@ -188,24 +188,24 @@ export default class Home extends React.Component {
                     </li>
                     <li>
                       <div className="o-hidden">
-                        <span className="link dmenu">Gallery <i class="fa fa-angle-right"></i></span> 
+                        <span className="link dmenu">Gallery <i className="fa fa-angle-right"></i></span> 
                       </div>
-                      <div class="sub-menu">
+                      <div className="sub-menu">
                           <ul>
                               <li>
-                                  <div class="o-hidden">
-                                      <span class="sub-link back"><i class="fa fa-angle-left"></i> Go
+                                  <div className="o-hidden">
+                                      <span className="sub-link back"><i className="fa fa-angle-left"></i> Go
                                           Back</span>
                                   </div>
                               </li>
                               <li>
-                                  <div class="o-hidden">
-                                      <a href="#" class="sub-link">Photos</a>
+                                  <div className="o-hidden">
+                                      <a href="#" className="sub-link">Photos</a>
                                   </div>
                               </li>
                               <li>
-                                  <div class="o-hidden">
-                                      <a href="#" class="sub-link">Vidoes</a>
+                                  <div className="o-hidden">
+                                      <a href="#" className="sub-link">Vidoes</a>
                                   </div>
                               </li>
                           </ul>
@@ -216,19 +216,19 @@ export default class Home extends React.Component {
               </div>
               <div className="col-lg-3 col-md-4">
                 <div className="cont-info">
-                        <div class="item">
+                        <div className="item">
                             <h6>Timings :</h6>
                             <p>09:00 AM to 05:00 PM</p>
                         </div>
-                        <div class="item">
+                        <div className="item">
                             <h6>Whatsapp :</h6>
                             <p><a href="https://wa.me/919393258258">9393258258</a></p>
                         </div>
-                        <div class="item">
+                        <div className="item">
                             <h6>Address :</h6>
                             <p>'Brindavan', Kadugodi Post, Kadugodi, Bengaluru, Karnataka 560067</p>
                         </div>
-                        <div class="item">
+                        <div className="item">
                             <h6>Email :</h6>
                             <p><a href="mailto:info@sssmediacentre.org">info@sssmediacentre.org</a></p>
                         </div>
